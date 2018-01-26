@@ -52,8 +52,13 @@ function fillWithContent(div) {
     remover.setAttribute('class', 'remover');
     remover.classList.toggle('hide');              // hide remover
     remover.innerText = "X";
-    remover.addEventListener('click', remove);
-    remover.addEventListener('touchstart', remove);
+    if(onMobile()){
+        remover.addEventListener('touchstart', remove);
+    }else {
+        remover.addEventListener('click', remove);
+    }
+
+
 
     text.innerText = input.value;
     text.setAttribute('class', 'text');
@@ -68,7 +73,7 @@ function fillWithContent(div) {
 }
 
 function remove(event) {
-    event.currentTarget.parentNode.remove();
+        event.currentTarget.parentNode.remove();
 }
 
 function changeState(event) {
@@ -83,10 +88,12 @@ function changeState(event) {
             remover.classList.toggle('hide');
             if (tag.getAttribute('draggable') == 'false') {  // if the movement is forbidden
                 tag.setAttribute('draggable', 'true');
+                tag.style.zIndex = 10;
                 text.classList.toggle('draggable');    // cursor: move;
             }
             else {
                 tag.setAttribute('draggable', 'false');
+                tag.style.zIndex =5;
                 text.classList.toggle('draggable');    // cursor: move;
             }
         }
@@ -94,21 +101,22 @@ function changeState(event) {
         remover.classList.toggle('hide');
         if (tag.getAttribute('draggable') == 'false') {  // if the movement is forbidden
             tag.setAttribute('draggable', 'true');
+            tag.style.zIndex = 10;
             text.classList.toggle('draggable');    // cursor: move;
         }
         else {
             tag.setAttribute('draggable', 'false');
+            tag.style.zIndex =5;
             text.classList.toggle('draggable');    // cursor: move;
         }
-
-        siblings.map((sibling)=>{
-            sibling.getElementsByClassName('remover')[0].className = 'remover hide';
-            sibling.setAttribute('draggable', 'false');
-            sibling.getElementsByClassName('text')[0].className='text';
-        });
     }
 
-
+    siblings.map((sibling)=>{
+        sibling.getElementsByClassName('remover')[0].className = 'remover hide';
+        sibling.setAttribute('draggable', 'false');
+        sibling.getElementsByClassName('text')[0].className='text';
+        sibling.style.zIndex =5;
+    });
 }
 
 function draggAndDrop(e) {
