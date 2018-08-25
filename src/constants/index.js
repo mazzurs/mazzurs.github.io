@@ -1,0 +1,3 @@
+export const CHANGE_STATE_PROP = '_CHANGE_STATE_PROP'
+export const SHOW_MODAL = 'SHOW_MODAL'
+export const HIDE_MODAL = 'HIDE_MODAL'

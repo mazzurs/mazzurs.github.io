@@ -1,0 +1,245 @@
+@import '../../themes/variables.scss';
+.slider {
+  width: 730px;
+  height: 350px;
+  box-shadow: 0 0.1875rem 0.5rem rgba(5, 5, 5, 0.08);
+  @media (max-width: 850px) {
+    width: 90%;
+  }
+  @media (max-width: 750px) {
+    width: 100%;
+  }
+  @media (max-width: 650px) {
+    height: unset;
+  }
+  .slide {
+    width: 730px;
+    height: 350px;
+    background: #ffffff;
+    @media (max-width: 650px) {
+      height: unset;
+    }
+    .wrapper {
+      display: flex;
+      align-items: flex-start;
+      flex-direction: row;
+      justify-content: center;
+      padding: 3.125rem 50px 3.125rem 50px;
+      width: 100%;
+      @media (max-width: $mobile-width) {
+        flex-direction: column;
+        align-items: center;
+      }
+      .left {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        @media (max-width: $mobile-width) {
+          width: 100%;
+        }
+        .avatar {
+          background-image: url('../assets/avatars/av-circle.png');
+          background-size: cover;
+          background-repeat: no-repeat;
+          width: 12.625rem;
+          height: 12.625rem;
+          position: relative;
+          user-select: none;
+          cursor: pointer;
+          @media (max-width: $mobile-width) {
+            width: 9.5rem;
+            height: 9.5rem;
+          }
+          img {
+            height: 10.875rem;
+            width: 10.9375rem;
+            @media (max-width: $mobile-width) {
+              height: 7.75rem;
+              width: 7.8125rem;
+            }
+
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+            border-radius: 100%;
+            background-size: cover;
+          }
+        }
+        .name {
+          margin-top: 10px;
+          font-weight: 500;
+        }
+        .socials {
+          display: flex;
+          margin: 5px 0px 5px 0px;
+          $hover-color: #eeeeee;
+          .insta {
+            background-image: url('../assets/images/insta.png');
+            background-size: cover;
+            width: 30px;
+            height: 30px;
+            border-radius: 100%;
+            &:hover {
+              background-color: $hover-color;
+              box-shadow: 0 0.1875rem 0.5rem rgba(5, 5, 5, 0.08);
+            }
+          }
+          .facebook {
+            background-image: url('../assets/images/facebook.png');
+            background-size: cover;
+            width: 30px;
+            height: 30px;
+            border-radius: 100%;
+            &:hover {
+              background-color: $hover-color;
+              box-shadow: 0 0.1875rem 0.5rem rgba(5, 5, 5, 0.08);
+            }
+          }
+          .twitter {
+            background-image: url('../assets/images/twitter.png');
+            background-size: cover;
+            width: 30px;
+            height: 30px;
+            border-radius: 100%;
+            &:hover {
+              background-color: $hover-color;
+              box-shadow: 0 0.1875rem 0.5rem rgba(5, 5, 5, 0.08);
+            }
+          }
+          .youtube {
+            background-image: url('../assets/images/youtube.png');
+            background-size: cover;
+            width: 30px;
+            height: 30px;
+            border-radius: 100%;
+            &:hover {
+              background-color: $hover-color;
+              box-shadow: 0 0.1875rem 0.5rem rgba(5, 5, 5, 0.08);
+            }
+          }
+          .github {
+            background-image: url('../assets/images/github.png');
+            background-size: cover;
+            width: 30px;
+            height: 30px;
+            border-radius: 100%;
+            &:hover {
+              background-color: $hover-color;
+              box-shadow: 0 0.1875rem 0.5rem rgba(5, 5, 5, 0.08);
+            }
+          }
+          .vk {
+            background-image: url('../assets/images/vk.png');
+            background-size: cover;
+            width: 30px;
+            height: 30px;
+            border-radius: 100%;
+            &:hover {
+              background-color: $hover-color;
+              box-shadow: 0 0.1875rem 0.5rem rgba(5, 5, 5, 0.08);
+            }
+          }
+          a ~ a {
+            margin-left: 5px;
+          }
+        }
+      }
+      .right {
+        margin-top: 0;
+        margin-left: 2.25rem;
+        width: 46%;
+        @media (max-width: $mobile-width) {
+          width: 100%;
+          margin-left: 0;
+        }
+        .title {
+          text-transform: inherit;
+          font-size: calc(1.25rem + 2 * ((100vw - 26.25rem)/ 860));
+          color: $text-color;
+          font-weight: 500;
+        }
+        .text {
+          color: #7587a2;
+          .read-story {
+            color: #bbb;
+            line-height: 1.5rem;
+            text-decoration: underline;
+            display: inline;
+            margin-left: .3125rem;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+  .next-arrow {
+    position: absolute;
+    width: 4.8125rem;
+    height: 4.8125rem;
+    right: -35px;
+    top: calc(50% - 2.4rem);
+    z-index: 10;
+    border-radius: 100%;
+    box-shadow: 0 0.1875rem 0.5rem rgba(5,5,5,.08);
+    border: 3px solid #fff;
+    background-color: #fff;
+    cursor: pointer;
+    @media (max-width: 750px) {
+      right: 0;
+      width: 2.8125rem;
+      height: 2.8125rem;
+      top: calc(50% - 1.4rem);
+    }
+    &:hover {
+      background-color: #eeeeee;
+      border: 3px solid #eeeeee;
+    }
+    svg {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 1.875rem;
+      height: 1.875rem;
+      margin-left: -.9375rem;
+      margin-top: -.9375rem;
+      color: #2c3038;
+    }
+  }
+  .prev-arrow {
+    position: absolute;
+    width: 4.8125rem;
+    height: 4.8125rem;
+    top: calc(50% - 2.4rem);
+    margin-left: -35px;
+    z-index: 10;
+    border-radius: 100%;
+    box-shadow: 0 0.1875rem 0.5rem rgba(5,5,5,.08);
+    border: 3px solid #fff;
+    background-color: #fff;
+    cursor: pointer;
+    @media (max-width: 750px) {
+      margin-left: 0;
+      width: 2.8125rem;
+      height: 2.8125rem;
+      top: calc(50% - 1.4rem);
+    }
+    &:hover {
+      background-color: #eeeeee;
+      border: 3px solid #eeeeee;
+    }
+    svg {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 1.875rem;
+      height: 1.875rem;
+      margin-left: -.9375rem;
+      margin-top: -.9375rem;
+      color: #2c3038;
+    }
+  }
+}

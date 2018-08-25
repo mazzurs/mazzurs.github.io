@@ -1,0 +1,81 @@
+@import url(../../node_modules/slick-carousel/slick/slick.css);
+@import url(../../node_modules/slick-carousel/slick/slick-theme.css);
+@font-face {
+  font-family: 'Neo Sans Pro';
+  src: url("../assets/fonts/NeoSansPro-Bold.eot");
+  src: local("Neo Sans Pro Bold"), local("NeoSansPro-Bold"), url("../assets/fonts/NeoSansPro-Bold.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/NeoSansPro-Bold.woff") format("woff"), url("../assets/fonts/NeoSansPro-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Neo Sans Pro';
+  src: url("../assets/fonts/NeoSansPro-Medium.eot");
+  src: local("Neo Sans Pro Medium"), local("NeoSansPro-Medium"), url("../assets/fonts/NeoSansPro-Medium.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/NeoSansPro-Medium.woff") format("woff"), url("../assets/fonts/NeoSansPro-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Neo Sans Pro';
+  src: url("../assets/fonts/NeoSansPro-LightItalic.eot");
+  src: local("Neo Sans Pro Light Italic"), local("NeoSansPro-LightItalic"), url("../assets/fonts/NeoSansPro-LightItalic.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/NeoSansPro-LightItalic.woff") format("woff"), url("../assets/fonts/NeoSansPro-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Neo Sans Pro';
+  src: url("../assets/fonts/NeoSansPro-Regular.eot");
+  src: local("Neo Sans Pro"), local("NeoSansPro-Regular"), url("../assets/fonts/NeoSansPro-Regular.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/NeoSansPro-Regular.woff") format("woff"), url("../assets/fonts/NeoSansPro-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Neo Sans Pro Ultra';
+  src: url("../assets/fonts/NeoSansPro-Ultra.eot");
+  src: local("Neo Sans Pro Ultra"), local("NeoSansPro-Ultra"), url("../assets/fonts/NeoSansPro-Ultra.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/NeoSansPro-Ultra.woff") format("woff"), url("../assets/fonts/NeoSansPro-Ultra.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Neo Sans Pro';
+  src: url("../assets/fonts/NeoSansPro-BoldItalic.eot");
+  src: local("Neo Sans Pro Bold Italic"), local("NeoSansPro-BoldItalic"), url("../assets/fonts/NeoSansPro-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/NeoSansPro-BoldItalic.woff") format("woff"), url("../assets/fonts/NeoSansPro-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Neo Sans Pro';
+  src: url("../assets/fonts/NeoSansPro-Light.eot");
+  src: local("Neo Sans Pro Light"), local("NeoSansPro-Light"), url("../assets/fonts/NeoSansPro-Light.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/NeoSansPro-Light.woff") format("woff"), url("../assets/fonts/NeoSansPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Neo Sans Pro';
+  src: url("../assets/fonts/NeoSansPro-Italic.eot");
+  src: local("Neo Sans Pro Italic"), local("NeoSansPro-Italic"), url("../assets/fonts/NeoSansPro-Italic.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/NeoSansPro-Italic.woff") format("woff"), url("../assets/fonts/NeoSansPro-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic; }
+
+body {
+  margin: 0;
+  min-width: 320px; }
+
+* {
+  font-family: Neo Sans Pro;
+  box-sizing: border-box;
+  outline: none; }
+
+h1, h2, h3 {
+  margin: 0; }
+
+html, body {
+  margin: 0;
+  height: 100%; }
+  html #root, body #root {
+    height: 100%; }
+    html #root > div, body #root > div {
+      position: relative;
+      height: 100%; }
+
+.nav-link {
+  text-decoration: none; }

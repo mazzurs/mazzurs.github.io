@@ -1,0 +1,24 @@
+.begin {
+  font-size: 13px;
+  letter-spacing: .04em;
+  height: 42px;
+  font-family: neosanspro,sans-serif;
+  line-height: 42px;
+  font-weight: 700;
+  border-radius: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: inline-block;
+  margin-left: 0;
+  background-color: #ed336c;
+  color: #fff;
+  cursor: pointer;
+  transition-duration: .2s;
+  min-width: 180px; }
+  .begin .icon {
+    transition-duration: .2s;
+    margin-left: 8px; }
+  .begin:hover {
+    background-color: #d6255b; }
+    .begin:hover .icon {
+      transform: rotate(-45deg); }

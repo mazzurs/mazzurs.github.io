@@ -1,0 +1,226 @@
+@import '../../themes/variables.scss';
+
+.about {
+  .top {
+    display: flex;
+    align-items: center;
+    min-height: 700px;
+    background: #ffffff;
+    @media (max-width: $large-width) {
+      flex-direction: column;
+      justify-content: center;
+      min-height: unset;
+    }
+    .left {
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      margin-left: 10%;
+      z-index: 10;
+      @media (max-width: $large-width) {
+        width: 100%;
+        margin-left: 0;
+        padding: 20px;
+        align-items: center;
+        margin-bottom: 20px;
+        br {
+          display: none;
+        }
+      }
+      .begin {
+        width: 222px;
+        height: 50px;
+        display: flex;
+        font-size: 17px;
+        align-items: center;
+      }
+      h1 {
+        font-size: 4em;
+        color: $text-color;
+        @media (max-width: 1200px) {
+          font-size: 3em;
+        }
+        @media (max-width: 850px) {
+          font-size: 2.7em;
+        }
+        @media (max-width: 755px) {
+          br {
+            display: block;
+          }
+          align-self: flex-start;
+        }
+      }
+      h3 {
+        font-size: 2em;
+        margin: 20px 0px 20px 0px;
+        color: $background-text;
+        br {
+          display: none;
+        }
+        @media (max-width: 1200px) {
+          font-size: 1.5em;
+        }
+        @media (max-width: 850px) {
+          font-size: 1.2em;
+        }
+        @media (max-width: 755px) {
+          align-self: flex-start;
+        }
+        @media (max-width: 655px) {
+          br {
+            display: block;
+          }
+        }
+        @media (max-width: $mobile-width) {
+          font-size: 1em;
+        }
+      }
+    }
+    .circle {
+      background: url('../assets/images/circle.png') no-repeat left center;
+      width: 141px;
+      height: 144px;
+      position: absolute;
+      z-index: 5;
+      right: 35%;
+      display: none;
+      opacity: 0.7;
+      @media (max-width: $large-width) {
+        display: none;
+      }
+    }
+    .circles {
+      background: url('../assets/images/circles.png') no-repeat left center;
+      width: 652px;
+      height: 494px;
+      position: absolute;
+      right: 0;
+      opacity: 0.7;
+      @media (max-width: $large-width) {
+        display: none;
+      }
+    }
+    .img-container {
+      width: 500px;
+      height: 500px;
+      z-index: 10;
+      @media (max-width: $large-width) {
+        width: 320px;
+        height: 320px;
+      }
+      .img-wrapper {
+        width: 100%;
+        height: 100%;
+        background: url('../assets/images/1.png') no-repeat left center;
+        z-index: 5;
+        background-size: contain;
+        top: 217px;
+        left: 58%;
+        animation: bouncing 3.5s infinite;
+      }
+    }
+
+    //@media (max-width: 1200px) {
+    //  width: 406px;
+    //  height: 349px;
+    //}
+    //@media (max-width: 1020px) {
+    //  width: 366px;
+    //  height: 324px;
+    //}
+    //@media (max-width: 920px) {
+    //  width: 306px;
+    //  height: 264px;
+    //}
+    //@media (max-width: 1020px) {
+    //  margin-top: 20px;
+    //}
+    //}
+  }
+  .what-is-webwork {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    //height: 400px;
+    background: #9bc552;
+
+    padding: 20px 70px 20px 70px;
+    @media (max-width: $large-width) {
+      flex-direction: column;
+    }
+    @media (max-width: 600px) {
+      padding: 20px 0px 20px 0px;
+    }
+    .left {
+      flex: 1 1;
+      margin-right: 50px;
+      @media (max-width: $large-width) {
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 0;
+      }
+      @media (max-width: 600px) {
+        padding: 0px 20px 0px 20px;
+      }
+      h1 {
+        color: $text-color;
+      }
+      h3 {
+        color: $background-text;
+      }
+    }
+    .right {
+      flex: 1 1;
+      .video {
+        width: 560px;
+        height: 313px;
+        @media (max-width: 600px) {
+          width: 320px;
+          height: 180px;
+          margin-left: 0;
+        }
+      }
+    }
+  }
+  .slider-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: $silver;
+    padding-bottom: 20px;
+    .head {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      font-size: 2em;
+      @media (max-width: 1115px) {
+        font-size: 1.5em;
+      }
+      @media (max-width: $medium-width) {
+        font-size: 1.2em;
+      }
+      @media (max-width: 720px) {
+        font-size: 1em;
+      }
+      @media (max-width: 580px) {
+        font-size: 0.8em;
+      }
+      .students {
+        color: #29a9fa;
+      }
+    }
+    h2 {
+      margin-bottom: 10px;
+      color: $text-color;
+    }
+    h3 {
+      color: $background-text;
+    }
+    //background: url('../assets/images/pattern.png');
+  }
+}

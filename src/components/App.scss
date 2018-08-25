@@ -1,0 +1,18 @@
+@import '../themes/variables.scss';
+@import "../themes/other.scss";
+
+@import 'Header/Header.scss';
+@import 'Buttons/Begin/Begin.scss';
+@import 'About/About.scss';
+@import 'Slider/Slider.scss';
+@import 'Modal/Modal.scss';
+@import 'ContactForm/ContactForm.scss';
+@import 'Footer/Footer.scss';
+
+@import '../themes/keyframes.scss';
+
+.app-routes {
+  margin-top: $header-height;
+  margin-bottom: $footer-height;
+}
+
