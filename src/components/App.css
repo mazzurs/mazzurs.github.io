@@ -77,6 +77,9 @@ html, body {
       position: relative;
       height: 100%; }
 
+ul {
+  list-style-type: none; }
+
 .nav-link {
   text-decoration: none; }
 
@@ -789,76 +792,77 @@ html, body {
     max-width: 1230px;
     margin: 0 auto;
     padding-left: 30px;
-    padding-right: 30px; }
-    .footer .wrapper .footer-items .navigation {
-      width: 120px; }
-    .footer .wrapper .footer-items .footer-socials {
+    padding-right: 30px;
+    opacity: .6; }
+    .footer .wrapper .footer-items .socials-container {
       display: flex; }
-      .footer .wrapper .footer-items .footer-socials .insta {
+      .footer .wrapper .footer-items .socials-container .insta {
         background-image: url("../assets/images/insta.png");
         background-size: cover;
         width: 30px;
         height: 30px;
         border-radius: 100%; }
-        .footer .wrapper .footer-items .footer-socials .insta:hover {
+        .footer .wrapper .footer-items .socials-container .insta:hover {
           background-color: #eeeeee;
           box-shadow: 0 0.1875rem 0.5rem rgba(5, 5, 5, 0.08); }
-      .footer .wrapper .footer-items .footer-socials .facebook {
+      .footer .wrapper .footer-items .socials-container .facebook {
         background-image: url("../assets/images/facebook.png");
         background-size: cover;
         width: 30px;
         height: 30px;
         border-radius: 100%; }
-        .footer .wrapper .footer-items .footer-socials .facebook:hover {
+        .footer .wrapper .footer-items .socials-container .facebook:hover {
           background-color: #eeeeee;
           box-shadow: 0 0.1875rem 0.5rem rgba(5, 5, 5, 0.08); }
-      .footer .wrapper .footer-items .footer-socials .twitter {
+      .footer .wrapper .footer-items .socials-container .twitter {
         background-image: url("../assets/images/twitter.png");
         background-size: cover;
         width: 30px;
         height: 30px;
         border-radius: 100%; }
-        .footer .wrapper .footer-items .footer-socials .twitter:hover {
+        .footer .wrapper .footer-items .socials-container .twitter:hover {
           background-color: #eeeeee;
           box-shadow: 0 0.1875rem 0.5rem rgba(5, 5, 5, 0.08); }
-      .footer .wrapper .footer-items .footer-socials .youtube {
+      .footer .wrapper .footer-items .socials-container .youtube {
         background-image: url("../assets/images/youtube.png");
         background-size: cover;
         width: 30px;
         height: 30px;
         border-radius: 100%; }
-        .footer .wrapper .footer-items .footer-socials .youtube:hover {
+        .footer .wrapper .footer-items .socials-container .youtube:hover {
           background-color: #eeeeee;
           box-shadow: 0 0.1875rem 0.5rem rgba(5, 5, 5, 0.08); }
-      .footer .wrapper .footer-items .footer-socials .github {
+      .footer .wrapper .footer-items .socials-container .github {
         background-image: url("../assets/images/github.png");
         background-size: cover;
         width: 30px;
         height: 30px;
         border-radius: 100%; }
-        .footer .wrapper .footer-items .footer-socials .github:hover {
+        .footer .wrapper .footer-items .socials-container .github:hover {
           background-color: #eeeeee;
           box-shadow: 0 0.1875rem 0.5rem rgba(5, 5, 5, 0.08); }
-      .footer .wrapper .footer-items .footer-socials .vk {
+      .footer .wrapper .footer-items .socials-container .vk {
         background-image: url("../assets/images/vk.png");
         background-size: cover;
         width: 30px;
         height: 30px;
         border-radius: 100%; }
-        .footer .wrapper .footer-items .footer-socials .vk:hover {
+        .footer .wrapper .footer-items .socials-container .vk:hover {
           background-color: #eeeeee;
           box-shadow: 0 0.1875rem 0.5rem rgba(5, 5, 5, 0.08); }
-      .footer .wrapper .footer-items .footer-socials .telegram {
+      .footer .wrapper .footer-items .socials-container .telegram {
         background-image: url("../assets/images/telegram.png");
         background-size: cover;
         width: 30px;
         height: 30px;
         border-radius: 100%; }
-        .footer .wrapper .footer-items .footer-socials .telegram:hover {
+        .footer .wrapper .footer-items .socials-container .telegram:hover {
           background-color: #eeeeee;
           box-shadow: 0 0.1875rem 0.5rem rgba(5, 5, 5, 0.08); }
-      .footer .wrapper .footer-items .footer-socials a ~ a {
+      .footer .wrapper .footer-items .socials-container a ~ a {
         margin-left: 10px; }
+    .footer .wrapper .footer-items .navigation {
+      width: 120px; }
     .footer .wrapper .footer-items ~ .footer-items {
       margin-left: 20px; }
 

@@ -15,16 +15,22 @@
     margin: 0 auto;
     padding-left: 30px;
     padding-right: 30px;
+    opacity: .6;
     .footer-items {
+      .socials-container {
+
+          display: flex;
+          @include socials;
+          a ~ a {
+            margin-left: 10px;
+          }
+
+      }
+
+
+
       .navigation {
         width: 120px;
-      }
-      .footer-socials {
-        display: flex;
-        @include socials;
-        a ~ a {
-          margin-left: 10px;
-        }
       }
     }
     .footer-items ~ .footer-items {

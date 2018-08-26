@@ -26,6 +26,8 @@ const buttons = [
   }
 ]
 
+const date = new Date()
+
 class Footer extends Component {
   constructor (props) {
     super(props)
@@ -39,28 +41,31 @@ class Footer extends Component {
 
           <div className='footer-items'>
             <div className='title'>
-              © WEBWORK 2018
+              © WEBWORK {date.getFullYear()}
               <p className='sub-title'>Школа онлайн-образования</p>
             </div>
             <div className='info'>
               <ul className='info-list'>
-                <li>+7 (812) 408-06-89</li>
-                <li>info@loftschool.com</li>
+                <li>+3 (809) 832-49-811</li>
+                <li>smazzurs@gmail.com</li>
               </ul>
             </div>
             <div className='socials'>
-              <a href='https://www.facebook.com/smazzur' target='_blank'>
-                <div className='facebook'/>
-              </a>
-              <a href='https://vk.com/sergmazur' target='_blank'>
-                <div className='vk'/>
-              </a>
-              <a href='https://www.instagram.com/mazur_serg/' target='_blank'>
-                <div className='insta'/>
-              </a>
-              <a href='https://t.me/mazur_s' target='_blank'>
-                <div className='telegram'/>
-              </a>
+              <p>Мы в соцсетях</p>
+              <div className='socials-container'>
+                <a href='https://www.facebook.com/smazzur' target='_blank'>
+                  <div className='facebook'/>
+                </a>
+                <a href='https://vk.com/sergmazur' target='_blank'>
+                  <div className='vk'/>
+                </a>
+                <a href='https://www.instagram.com/mazur_serg/' target='_blank'>
+                  <div className='insta'/>
+                </a>
+                <a href='https://t.me/mazur_s' target='_blank'>
+                  <div className='telegram'/>
+                </a>
+              </div>
             </div>
           </div>
 
